@@ -31,7 +31,7 @@ def get_prediction():
     #convert into data frame
     baby_df=pd.DataFrame(baby_data_cleaned)
     #load machine learning trained model
-    with open("userfile/model.pkl",'rb') as obj:
+    with open("model.pkl",'rb') as obj:
         model=pickle.load(obj)
     #make predictions on user input
     prediction=model.predict(baby_df)
