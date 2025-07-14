@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<body>
+    {% if name=="chhavi" %}
+        {%for i in range(4)%}
+            <h1>Hi {{name}} !</h1><br>
+            <h2>welcome to chhavi's heart</h2>
+            <br>
+            <p>u will find only paras here</p>
+        {% endfor %}
+    {% else %}
+        <h1>invalid user!</h1>
+    {% endif %}
+</body>
+</html>
